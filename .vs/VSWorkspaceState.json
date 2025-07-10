@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "\\app",
+    "\\app\\admin\\blog",
+    "\\app\\admin\\blog\\create",
+    "\\components\\sections",
+    "\\lib",
+    "\\lib\\supabase"
+  ],
+  "PreviewInSolutionExplorer": false
+}

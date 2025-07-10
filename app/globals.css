@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: "Inter", sans-serif;
+  --font-playfair: "Playfair Display", serif;
+  --color-gold: #d4af37;
+  --color-dark-gold: #b8941f;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-gray-900;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-playfair);
+    @apply font-semibold;
+  }
+
+  .font-serif {
+    font-family: var(--font-playfair);
+  }
+
+  .font-sans {
+    font-family: var(--font-inter);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    background-color: var(--color-gold);
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 0;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .btn-primary:hover {
+    background-color: var(--color-dark-gold);
+  }
+
+  .btn-secondary {
+    border: 2px solid var(--color-gold);
+    color: var(--color-gold);
+    background-color: transparent;
+    padding: 0.75rem 2rem;
+    border-radius: 0;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .btn-secondary:hover {
+    background-color: var(--color-gold);
+    color: white;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24 px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto;
+  }
+
+  .fade-in {
+    opacity: 0;
+    transform: translateY(2rem);
+    transition: all 0.7s ease-out;
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-dark-gold);
+}
+
+.certificate-img
+{
+    width: auto;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    background: #000;
+}
