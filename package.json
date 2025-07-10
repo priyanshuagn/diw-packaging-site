@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "npm run build",
-    "dev": "npm run dev",
-    "start": "npm run dev"
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start"
   },
   "packageManager": "npm@9.0.0",
   "dependencies": {
