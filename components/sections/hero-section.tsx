@@ -23,7 +23,7 @@ const heroSlides = [
   },
   {
     id: 3,
-    image: "/placeholder.svg?height=800&width=1200",
+    image: "/luxurythird.png?height=800&width=1200",
     title: "Specialty Finishes",
     subtitle: "Foil stamping, embossing, and unique textures that create unforgettable experiences",
     cta: "Request Quote",
