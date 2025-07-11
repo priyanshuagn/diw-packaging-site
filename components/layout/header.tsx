@@ -67,7 +67,7 @@ export default function Header() {
               alt="DIW Logo"
               width={40}
               height={40}
-              className="w-10 h-10"
+              className="w-auto h-10"
             />
             {/* <div className="font-serif text-xl font-bold">
               DIW <span className="text-[var(--color-gold)]">Packaging</span>
